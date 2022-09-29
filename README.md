@@ -7,7 +7,16 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 ## Reproduce Steps
 
 
-1. With `next@12.3.2-canary.(9~13)` installed.
+1. Make sure `next@12.3.2-canary.(9~13)` is installed and config `next.config.js` like below:
+
+```
+  swcMinify: true,
+  experimental: {
+    browsersListForSwc: true,
+    legacyBrowsers: false,
+  }
+```
+
 2. Execute the following commands:
 
 
